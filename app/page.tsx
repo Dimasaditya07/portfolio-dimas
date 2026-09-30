@@ -383,7 +383,7 @@ export default function Home() {
             </div>
 
             <div className="contact-value">
-              <span>@dimasaditya07_</span>
+              <span>@sidimzy</span>
               <span className="contact-arrow">↗</span>
             </div>
           </a>
