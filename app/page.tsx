@@ -372,7 +372,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.tiktok.com/@dimasaditya07_"
+            href="https://www.tiktok.com/@sidimzy"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
@@ -389,7 +389,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/dimasadityaramadhan/"
+            href="https://www.linkedin.com/in/dimas-aditya-ramadhan-25b239377/?isSelfProfile=true"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
