@@ -7,31 +7,32 @@ const projects = [
     description: "Platform penyewaan peralatan outdoor",
     tech: "Next.js · Laravel · MySQL · Midtrans",
     category: "APLIKASI WEB",
-    image: "/images/projects/kaparak.png",
-    website: "https://kaparak.my.id",
-    github: "https://github.com/username/kaparak",
+    image: "/images/kaparak.png",
+    website: "#",
+    github: "https://github.com/Dimasaditya07/kaparak-project",
     style: "project-green",
   },
   {
     number: "02",
-    name: "MAMI WEDDING",
-    description: "Platform pemesanan jasa wedding organizer",
-    tech: "React · Laravel · MySQL",
+    name: "Gunung Emas",
+    description:
+      "Point of Sale untuk toko perhiasan - MAGANG DI PT RAPIER TECHNOLOGY INTERNATIONAL",
+    tech: "React ·Node.js · MySQL",
     category: "PENGEMBANGAN WEB",
-    image: "/images/projects/mami-wedding.png",
+    image: "/images/ge.png",
     website: "#",
-    github: "https://github.com/username/mami-wedding",
+    github: "#",
     style: "project-gold",
   },
   {
     number: "03",
-    name: "RIZKY CELL POS",
-    description: "Aplikasi kasir desktop untuk penjualan",
-    tech: "Next.js · Electron · SQLite",
-    category: "APLIKASI DESKTOP",
-    image: "/images/projects/rizky-cell.png",
+    name: "MAMI WEDDING",
+    description: "Website untuk jasa dokumentasi pernikahan",
+    tech: "Laravel · MySQL",
+    category: "APLIKASI WEB",
+    image: "/images/mami.png",
     website: "#",
-    github: "https://github.com/username/rizky-cell",
+    github: "https://github.com/Dimasaditya07/mami-wo",
     style: "project-blue",
   },
 ];
@@ -175,7 +176,7 @@ export default function Home() {
       {/* ABOUT */}
       <section className="about section-space" id="about">
         <div className="about-title">
-          <p className="eyebrow">SEDIKIT TENTANG SAYA / 001</p>
+          <p className="eyebrow">SEDIKIT TENTANG SAYA</p>
 
           <div className="about-photo">
             <Image
@@ -185,9 +186,7 @@ export default function Home() {
               sizes="(max-width: 700px) 100vw, 45vw"
             />
 
-            <span className="about-photo-label">
-              DIMAS ADITYA RAMADHAN / 001
-            </span>
+            <span className="about-photo-label">DIMAS ADITYA RAMADHAN</span>
           </div>
         </div>
 
@@ -239,22 +238,19 @@ export default function Home() {
                   sizes="(max-width: 700px) 100vw, 1200px"
                   className="project-image-photo"
                 />
-
-                {/* Overlay */}
-                <div className="project-image-overlay">
-                  <span>{project.category}</span>
-
-                  <span>PROYEK / {project.number}</span>
-                </div>
-
                 {/* Nomor */}
                 <span className="project-number">{project.number}</span>
 
                 {/* Hover Label */}
-                <div className="project-view">
-                  <span>LIHAT PROYEK</span>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-view"
+                >
+                  <span>LINK GITHUB</span>
                   <span>↗</span>
-                </div>
+                </a>
               </div>
 
               {/* INFORMASI PROJECT */}
@@ -334,12 +330,81 @@ export default function Home() {
           SESUATU YANG <span>LUAR BIASA.</span>
         </h2>
 
-        <a
-          href="mailto:your.email@example.com"
-          className="primary-button footer-button"
-        >
-          HUBUNGI SAYA <span>↗</span>
-        </a>
+        <p className="footer-description">
+          Terbuka untuk peluang kerja, kolaborasi, freelance, dan pengembangan
+          produk digital.
+        </p>
+
+        {/* CONTACT LINKS */}
+        <div className="contact-grid">
+          <a
+            href="https://wa.me/6281365011013"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <div>
+              <span className="contact-number">01</span>
+              <span className="contact-label">WHATSAPP</span>
+            </div>
+
+            <div className="contact-value">
+              <span>0813 6501 1013</span>
+              <span className="contact-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://instagram.com/dimasaditya07_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <div>
+              <span className="contact-number">02</span>
+              <span className="contact-label">INSTAGRAM</span>
+            </div>
+
+            <div className="contact-value">
+              <span>@dimasaditya07_</span>
+              <span className="contact-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@dimasaditya07_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <div>
+              <span className="contact-number">03</span>
+              <span className="contact-label">TIKTOK</span>
+            </div>
+
+            <div className="contact-value">
+              <span>@dimasaditya07_</span>
+              <span className="contact-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/dimasadityaramadhan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <div>
+              <span className="contact-number">04</span>
+              <span className="contact-label">LINKEDIN</span>
+            </div>
+
+            <div className="contact-value">
+              <span>DIMAS ADITYA RAMADHAN</span>
+              <span className="contact-arrow">↗</span>
+            </div>
+          </a>
+        </div>
 
         <div className="footer-bottom">
           <a href="#home" className="brand">
